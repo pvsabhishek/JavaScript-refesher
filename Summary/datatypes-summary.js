@@ -33,3 +33,28 @@ const myFun = function(){
 }
 
 console.log(typeof anotherId);
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack Memory (Primitive), Heap Memory (Non-Primitive)
+
+let myYouTubeName = "chiku.com"
+let anotherName = myYouTubeName
+anotherName = "chikudon"
+
+console.log(anotherName);
+console.log(myYouTubeName);
+
+
+let userOne = {
+    email : "user@google.com",
+    upi : "chikudon@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "chikudon@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
